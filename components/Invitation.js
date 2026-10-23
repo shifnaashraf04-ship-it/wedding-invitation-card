@@ -21,7 +21,7 @@ function formatDate(value) {
   ].join(" · ");
 }
 
-export default function Invitation({ topName = "Fasil" }) {
+export default function Invitation({ topName }) {
   return (
     <>
       <div className="top-names">
@@ -54,12 +54,14 @@ export default function Invitation({ topName = "Fasil" }) {
         </aside>
 
         <div className="hero-main">
+          {topName && <p className="hero-guest">Dear {topName},</p>}
+
           <p className="eyebrow">Together with our families</p>
 
           <h1>
-            Salman
-            <br />
             Rifa
+            <br />
+            Salam
           </h1>
 
           <p className="hero-subtitle">Here begins our forever</p>
@@ -138,17 +140,17 @@ export default function Invitation({ topName = "Fasil" }) {
         <div className="contact-grid">
           <div className="contact-item">
             <div className="contact-icon">♡</div>
-            <h3>Salam</h3>
+            <h3>Rifa</h3>
             <p>
-              <a href={`tel:${SALAM_PHONE}`}>{SALAM_PHONE_DISPLAY}</a>
+              <a href={`tel:${RIFA_PHONE}`}>{RIFA_PHONE_DISPLAY}</a>
             </p>
           </div>
 
           <div className="contact-item">
             <div className="contact-icon">♡</div>
-            <h3>Rifa</h3>
+            <h3>Salam</h3>
             <p>
-              <a href={`tel:${RIFA_PHONE}`}>{RIFA_PHONE_DISPLAY}</a>
+              <a href={`tel:${SALAM_PHONE}`}>{SALAM_PHONE_DISPLAY}</a>
             </p>
           </div>
 

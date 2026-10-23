@@ -26,9 +26,11 @@ export async function generateMetadata({ params }) {
 export default async function NamePage({ params }) {
   const { name } = await params;
 
+  const formatted = formatName(name);
+
   return (
-    <OpenInvitation>
-      <Invitation topName={formatName(name)} />
+    <OpenInvitation guestName={formatted}>
+      <Invitation topName={formatted} />
     </OpenInvitation>
   );
 }

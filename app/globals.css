@@ -146,6 +146,13 @@ button {
   min-width: 0;
 }
 
+.hero-guest {
+  font-family: var(--font-italianno), cursive;
+  font-size: clamp(30px, 4.5vw, 46px);
+  color: var(--gold-light);
+  margin-bottom: 14px;
+}
+
 .eyebrow {
   font-size: 10px;
   letter-spacing: 7px;
@@ -594,6 +601,13 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.gate-guest {
+  font-family: var(--font-italianno), cursive;
+  font-size: clamp(28px, 7vw, 42px);
+  color: var(--gold-light);
+  margin-bottom: 18px;
 }
 
 .gate-small {

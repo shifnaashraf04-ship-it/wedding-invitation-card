@@ -4,7 +4,7 @@ import OpenInvitation from "@/components/OpenInvitation";
 export default function Home() {
   return (
     <OpenInvitation>
-      <Invitation topName="Fasil" />
+      <Invitation />
     </OpenInvitation>
   );
 }

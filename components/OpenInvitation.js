@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const MUSIC_SRC = "/wedding-song.mp3";
 
-export default function OpenInvitation({ children }) {
+export default function OpenInvitation({ children, guestName }) {
   const audioRef = useRef(null);
   const [opened, setOpened] = useState(false);
   const [playing, setPlaying] = useState(false);
@@ -63,6 +63,8 @@ export default function OpenInvitation({ children }) {
       {!opened && (
         <div className="gate">
           <div className="gate-inner">
+            {guestName && <p className="gate-guest">Dear {guestName},</p>}
+
             <p className="gate-small">The Wedding Of</p>
 
             <div className="gate-names">
