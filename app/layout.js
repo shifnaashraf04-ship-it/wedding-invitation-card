@@ -23,9 +23,9 @@ const italianno = Italianno({
 });
 
 export const metadata = {
-  title: "Shifna & Navas | Wedding Invitation",
+  title: "Rifa & Salam | Wedding Invitation",
   description:
-    "Join us as we celebrate our wedding on 20 October 2026 at Gokulam Resort.",
+    "Join us as we celebrate our wedding on 22 November 2026 at Alif Auditorium, Perinthalmanna.",
 };
 
 export default function RootLayout({ children }) {

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${formatted} | Wedding Invitation`,
     description:
-      "Join us as we celebrate our wedding on 20 October 2026 at Gokulam Resort.",
+      "Join us as we celebrate our wedding on 22 November 2026 at Alif Auditorium, Perinthalmanna.",
   };
 }
 

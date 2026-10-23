@@ -39,15 +39,34 @@ button {
 
 .top-names {
   text-align: center;
-  padding: 18px 15px;
+  padding: 20px 15px;
   background: linear-gradient(180deg, #171412, #100e0c);
   border-bottom: 1px solid var(--gold-deep);
   font-family: var(--font-cormorant), serif;
-  font-size: 20px;
-  letter-spacing: 8px;
+  font-size: clamp(20px, 2.6vw, 28px);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 10px;
   text-transform: uppercase;
   color: var(--gold-light);
-  text-shadow: 0 0 18px #c9a86a33;
+  text-shadow:
+    0 1px 0 var(--gold-deep),
+    0 2px 0 #7a643a,
+    0 3px 0 #655331,
+    0 4px 0 #4e412a,
+    0 9px 20px rgba(0, 0, 0, 0.75),
+    0 0 26px rgba(201, 168, 106, 0.35);
+}
+
+.top-names-amp {
+  font-family: var(--font-italianno), cursive;
+  font-size: 1.7em;
+  font-style: normal;
+  letter-spacing: 0;
+  text-transform: none;
+  margin: 0 0.3em;
+  color: var(--gold);
+  vertical-align: -0.08em;
 }
 
 .hero {
@@ -162,8 +181,8 @@ h1 {
 }
 
 .video-frame {
-  width: min(760px, 100%);
-  aspect-ratio: 16 / 9;
+  width: min(560px, 100%);
+  aspect-ratio: 4 / 5;
   border: 1px solid var(--gold-deep);
   outline: 1px solid #c9a86a33;
   outline-offset: 6px;
@@ -173,7 +192,8 @@ h1 {
   box-shadow: 0 30px 70px #000000b3, 0 0 45px #c9a86a1f;
 }
 
-.video-frame video {
+.video-frame video,
+.video-frame img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -221,6 +241,14 @@ h1 {
   letter-spacing: 6px;
   margin: 15px 0 5px;
   color: var(--gold-light);
+}
+
+.date-time {
+  font-family: var(--font-cormorant), serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: var(--gold);
+  margin-bottom: 10px;
 }
 
 .date-caption {
@@ -492,6 +520,11 @@ h1 {
 
   .eyebrow {
     letter-spacing: 4px;
+  }
+
+  .top-names {
+    letter-spacing: 5px;
+    padding: 16px 12px;
   }
 
   h1 {

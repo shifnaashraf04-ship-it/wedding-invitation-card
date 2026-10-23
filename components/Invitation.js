@@ -1,12 +1,16 @@
 import Countdown from "@/components/Countdown";
 
-const WEDDING_DATE = "2026-10-20T10:00:00";
-const VENUE_NAME = "Gokulam Resort";
-const VENUE_ADDRESS = "Kozhikode, Kerala, India";
-const GOOGLE_MAPS_URL = "https://maps.google.com/?q=Gokulam+Resort+Kozhikode";
-const PHONE = "+918714714355";
-const PHONE_DISPLAY = "+91 87147 14355";
-const EMAIL = "shifnaashraf04@gmail.com";
+const WEDDING_DATE = "2026-11-22T11:00:00";
+const WEDDING_TIME = "11:00 AM – 3:00 PM";
+const VENUE_NAME = "Alif Auditorium";
+const VENUE_ADDRESS =
+  "Kachinikkad - Vellila Road, Perinthalmanna, Malappuram, Kerala 676507";
+const GOOGLE_MAPS_URL = "https://share.google/1obZSud06JWezScTD";
+const RIFA_PHONE = "+919207080938";
+const RIFA_PHONE_DISPLAY = "+91 92070 80938";
+const SALAM_PHONE = "+919645233620";
+const SALAM_PHONE_DISPLAY = "+91 96452 33620";
+const EMAIL = "riffaahk@gmail.com";
 
 function formatDate(value) {
   const date = new Date(value);
@@ -20,7 +24,11 @@ function formatDate(value) {
 export default function Invitation({ topName = "Fasil" }) {
   return (
     <>
-      <div className="top-names">Hy {topName}</div>
+      <div className="top-names">
+        Rifa
+        <span className="top-names-amp">&amp;</span>
+        Salam
+      </div>
 
       <header className="hero" id="home">
         <aside className="side-panel">
@@ -28,9 +36,9 @@ export default function Invitation({ topName = "Fasil" }) {
             <p className="side-small">The Wedding Of</p>
 
             <div className="side-names">
-              Shifna
+              Rifa
               <div className="side-amp">&amp;</div>
-              Navas
+              Salam
             </div>
 
             <div className="side-line" />
@@ -49,9 +57,9 @@ export default function Invitation({ topName = "Fasil" }) {
           <p className="eyebrow">Together with our families</p>
 
           <h1>
-            Shifna weds
+            Salman
             <br />
-            Navas
+            Rifa
           </h1>
 
           <p className="hero-subtitle">Here begins our forever</p>
@@ -59,10 +67,10 @@ export default function Invitation({ topName = "Fasil" }) {
           <div className="ornament">──── ♡ ────</div>
 
           <div className="video-frame">
-            <video autoPlay muted playsInline loop disablePictureInPicture controls={false}>
-              <source src="/wedding-video.mp4" type="video/mp4" />
-              Your browser does not support this video.
-            </video>
+            <img
+              src="/rifa-invitation-card.png"
+              alt="Rifa and Salam wedding invitation card"
+            />
           </div>
 
           <p className="video-caption">Our wedding invitation</p>
@@ -73,6 +81,8 @@ export default function Invitation({ topName = "Fasil" }) {
         <p className="section-label">Save the date</p>
 
         <h2 className="date-display">{formatDate(WEDDING_DATE)}</h2>
+
+        <p className="date-time">{WEDDING_TIME}</p>
 
         <p className="date-caption">Our wedding day</p>
 
@@ -128,17 +138,17 @@ export default function Invitation({ topName = "Fasil" }) {
         <div className="contact-grid">
           <div className="contact-item">
             <div className="contact-icon">♡</div>
-            <h3>Shifna</h3>
+            <h3>Salam</h3>
             <p>
-              <a href={`tel:${PHONE}`}>{PHONE_DISPLAY}</a>
+              <a href={`tel:${SALAM_PHONE}`}>{SALAM_PHONE_DISPLAY}</a>
             </p>
           </div>
 
           <div className="contact-item">
             <div className="contact-icon">♡</div>
-            <h3>Navas</h3>
+            <h3>Rifa</h3>
             <p>
-              <a href={`tel:${PHONE}`}>{PHONE_DISPLAY}</a>
+              <a href={`tel:${RIFA_PHONE}`}>{RIFA_PHONE_DISPLAY}</a>
             </p>
           </div>
 
@@ -154,7 +164,7 @@ export default function Invitation({ topName = "Fasil" }) {
 
       <footer className="footer">
         Thank you for being a part of our special day
-        <span>        With love, Shifna &amp; Navas ♡</span>
+        <span>        With love, Rifa &amp; Salam ♡</span>
       </footer>
     </>
   );
