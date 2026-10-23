@@ -24,12 +24,6 @@ function formatDate(value) {
 export default function Invitation({ topName }) {
   return (
     <>
-      <div className="top-names">
-        Rifa
-        <span className="top-names-amp">&amp;</span>
-        Salam
-      </div>
-
       <header className="hero" id="home">
         <aside className="side-panel">
           <div className="side-panel-inner">
