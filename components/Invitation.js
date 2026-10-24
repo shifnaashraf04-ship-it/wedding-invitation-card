@@ -1,12 +1,11 @@
 import Countdown from "@/components/Countdown";
 
-const WEDDING_DATE = "2026-11-22T11:00:00";
+const WEDDING_DATE = "2026-11-11T11:00:00";
 const WEDDING_TIME = "11:00 AM – 3:00 PM";
-const VENUE_NAME = "Alif Auditorium";
-const VENUE_ADDRESS =
-  "Kachinikkad - Vellila Road, Perinthalmanna, Malappuram, Kerala 676507";
-const GOOGLE_MAPS_URL = "https://share.google/1obZSud06JWezScTD";
-const WHATSAPP_PHONE = "919207080938";
+const VENUE_NAME = "Gokulam Resort";
+const VENUE_ADDRESS = "Gokulam Resort";
+const GOOGLE_MAPS_URL = "https://maps.google.com";
+const WHATSAPP_PHONE = "91987654310";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}`;
 
 function formatDate(value) {
@@ -27,9 +26,9 @@ export default function Invitation({ topName }) {
             <p className="side-small">The Wedding Of</p>
 
             <div className="side-names">
-              Rifa
+              Shahina
               <div className="side-amp">&amp;</div>
-              Salam
+              Ahadin
             </div>
 
             <div className="side-line" />
@@ -50,9 +49,9 @@ export default function Invitation({ topName }) {
           <p className="eyebrow">Together with our families</p>
 
           <h1>
-            Rifa
+            Shahina
             <br />
-            Salam
+            Ahadin
           </h1>
 
           <p className="hero-subtitle">Here begins our forever</p>
@@ -61,8 +60,8 @@ export default function Invitation({ topName }) {
 
           <div className="video-frame">
             <img
-              src="/rifa-invitation-card.png"
-              alt="Rifa and Salam wedding invitation card"
+              src="/shahina-ahadin.jpg"
+              alt="Shahina and Ahadin wedding invitation card"
             />
           </div>
 
@@ -147,7 +146,7 @@ export default function Invitation({ topName }) {
 
       <footer className="footer">
         Thank you for being a part of our special day
-        <span>        With love, Rifa &amp; Salam ♡</span>
+        <span>        With love, Shahina &amp; Ahadin ♡</span>
       </footer>
     </>
   );

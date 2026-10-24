@@ -68,20 +68,20 @@ export default function OpenInvitation({ children, guestName }) {
             <p className="gate-small">The Wedding Of</p>
 
             <div className="gate-names">
-              Rifa
+              Shahina
               <div className="gate-amp">&amp;</div>
-              Salam
+              Ahadin
             </div>
 
             <div className="gate-line" />
 
-            <p className="gate-date">22 · 11 · 2026</p>
+            <p className="gate-date">11 · 11 · 2026</p>
 
             <button type="button" className="gate-btn" onClick={open}>
               Open Invitation
             </button>
 
-            <p className="gate-hint">Rifa &amp; Salam request the pleasure of your company</p>
+            <p className="gate-hint">Shahina &amp; Ahadin request the pleasure of your company</p>
           </div>
         </div>
       )}
