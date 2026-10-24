@@ -407,9 +407,14 @@ h1 {
 .contact-grid {
   max-width: 1050px;
   margin: 50px auto 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 22px;
+}
+
+.contact-grid .contact-item {
+  width: min(380px, 90%);
 }
 
 .contact-item {
@@ -556,9 +561,13 @@ h1 {
   }
 
   .contact-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 14px;
     margin-top: 30px;
+  }
+
+  .contact-grid .contact-item {
+    width: min(380px, 100%);
   }
 
   .contact-item {

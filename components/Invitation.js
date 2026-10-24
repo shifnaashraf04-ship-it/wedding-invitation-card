@@ -6,11 +6,8 @@ const VENUE_NAME = "Alif Auditorium";
 const VENUE_ADDRESS =
   "Kachinikkad - Vellila Road, Perinthalmanna, Malappuram, Kerala 676507";
 const GOOGLE_MAPS_URL = "https://share.google/1obZSud06JWezScTD";
-const RIFA_PHONE = "+919207080938";
-const RIFA_PHONE_DISPLAY = "+91 92070 80938";
-const SALAM_PHONE = "+919645233620";
-const SALAM_PHONE_DISPLAY = "+91 96452 33620";
-const EMAIL = "riffaahk@gmail.com";
+const WHATSAPP_PHONE = "919207080938";
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_PHONE}`;
 
 function formatDate(value) {
   const date = new Date(value);
@@ -133,26 +130,16 @@ export default function Invitation({ topName }) {
 
         <div className="contact-grid">
           <div className="contact-item">
-            <div className="contact-icon">♡</div>
-            <h3>Rifa</h3>
-            <p>
-              <a href={`tel:${RIFA_PHONE}`}>{RIFA_PHONE_DISPLAY}</a>
-            </p>
-          </div>
-
-          <div className="contact-item">
-            <div className="contact-icon">♡</div>
-            <h3>Salam</h3>
-            <p>
-              <a href={`tel:${SALAM_PHONE}`}>{SALAM_PHONE_DISPLAY}</a>
-            </p>
-          </div>
-
-          <div className="contact-item">
-            <div className="contact-icon">✉</div>
+            <div className="contact-icon">✆</div>
             <h3>Send Us a Message</h3>
             <p>
-              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chat on WhatsApp
+              </a>
             </p>
           </div>
         </div>
